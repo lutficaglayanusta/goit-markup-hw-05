@@ -14,6 +14,7 @@ img{
     display: block;
 }
 
+
 .header{
     border-bottom: 1px solid #e7e9fc ;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -21,12 +22,14 @@ img{
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container{
-    display: flex;
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    align-items: baseline;
-    flex-direction: column;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header .container .navbar{
     display: flex;
@@ -535,6 +538,9 @@ a{
 .modal-window .modal-container .form-container .form-input .form-text:focus{
     border-color: #4D5AE5;
 }
+.modal-window .modal-container .form-container .form-input:focus-within .icon {
+    fill: #4D5AE5;
+}
 .modal-window .modal-container .form-container .form-input .icon{
     position: absolute;
     left: 16px;
@@ -542,9 +548,7 @@ a{
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window .modal-container .form-container .form-input .form-text:focus .icon{
-    fill: #4D5AE5;
-}
+
 .modal-window .modal-container .form-container-textarea{
     margin-bottom: 16px;
 }
@@ -583,6 +587,11 @@ a{
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+.checkbox:checked+.form-checked-label .privacy-span {
+    border: none;
+    background-color: #404bbf;
+    fill: #F4F4FD;
+}
 .modal-window .modal-container .form-checked .privacy-span{
     width: 16px;
     height: 16px;
@@ -597,11 +606,7 @@ a{
 .modal-window .modal-container .form-checked .checkbox{
     margin-right: 8px;
 }
-input[type="checkbox"]:checked + label .privacy-span {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}
+
 .modal-window .modal-container .form-checked .visually-hidden{
     position: absolute;
         width: 1px;
