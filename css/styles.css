@@ -553,7 +553,7 @@ a{
     display: block;
     margin-bottom: 4px;
 }
-.modal-window .modal-container .form-container-textarea .form-input .form_textarea{
+.modal-window .modal-container .form-container-textarea .form_textarea{
     width: 100%;
     height: 120px;
     font-size: 12px;
@@ -566,7 +566,7 @@ a{
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window .modal-container .form-container-textarea .form-input .form_textarea:focus{
+.modal-window .modal-container .form-container-textarea .form_textarea:focus{
     border-color: #4D5AE5;
 }
 .modal-window .modal-container .form-checked{
@@ -578,7 +578,7 @@ a{
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.modal-window .modal-container .form-checked .privacy{
+.modal-window .modal-container .form-checked .privacy-span{
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -589,9 +589,29 @@ a{
     justify-content: center;
     fill: transparent;
 }
-.modal-window .modal-container .form-checked .privacy:checked{
+.modal-window .modal-container .form-checked {
     border: none;
     fill: #F4F4FD;
+}
+.modal-window .modal-container .form-checked .checkbox{
+    margin-right: 8px;
+}
+.modal-window .modal-container .form-checked .checkbox:checked .privacy-span{
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+.modal-window .modal-container .form-checked .visually-hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 .modal-window .modal-container .form-checked .form-checked-label .form-link{
     color: #4d5ae5;
