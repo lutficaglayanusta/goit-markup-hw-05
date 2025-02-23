@@ -596,7 +596,7 @@ a{
 .modal-window .modal-container .form-checked .checkbox{
     margin-right: 8px;
 }
-.modal-window .modal-container .form-checked .checkbox:checked .privacy-span{
+input[type="checkbox"]:checked + label .privacy-span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
