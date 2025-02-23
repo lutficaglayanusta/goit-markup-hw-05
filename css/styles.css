@@ -587,11 +587,7 @@ a{
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.checkbox:checked+.form-checked-label .privacy-span {
-    border: none;
-    background-color: #404bbf;
-    fill: #F4F4FD;
-}
+
 .modal-window .modal-container .form-checked .privacy-span{
     width: 16px;
     height: 16px;
@@ -602,6 +598,11 @@ a{
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+.checkbox:checked+.form-checked-label .privacy-span {
+    border: none;
+    background-color: #404bbf;
+    fill: #F4F4FD;
 }
 .modal-window .modal-container .form-checked .checkbox{
     margin-right: 8px;
